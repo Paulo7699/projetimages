@@ -1,0 +1,81 @@
+.pictures-page-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.coquelicot {
+    grid-column: span 2;
+}
+
+.pictures-page-part > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+.pictures-page-part > div:not(.coquelicot) {
+    height: 300px;
+}
+
+/* Sources images */
+.brouillard {
+    background-image: url("images/brouillard.svg");
+}
+
+.cascade {
+    background-image: url("images/cascade.svg");
+}
+
+.jungle {
+    background-image: url("images/jungle.svg");
+}
+
+.foret {
+    background-image: url("images/foret.svg");
+}
+
+.montagne {
+    background-image: url("images/montagne.svg");
+}
+
+.coquelicot {
+    background-image: url("images/coquelicot.svg");
+}
+
+.deuxmecs {
+    background-image: url("images/2mecs.svg");
+}
+
+@media screen and (min-width: 992px) {
+    .pictures-page-part {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+
+    .coquelicot {
+        order: 1;
+    }
+    
+    .foret {
+        order: 2;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pictures-page-part > div {
+        height: 580px!important;
+    }    
+}
