@@ -23,7 +23,7 @@ img {
 }
 
 .pictures-page-part > div:not(.coquelicot) {
-    height: 300px;
+    height: 245px;
 }
 
 /* Sources images */
@@ -58,7 +58,7 @@ img {
 @media screen and (min-width: 992px) {
     .pictures-page-part {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 50px;
+        column-gap: 90px;
         row-gap: 30px;
     }
 
@@ -76,6 +76,6 @@ img {
     }
 
     .pictures-page-part > div {
-        height: 580px!important;
+        height: auto!important;
     }    
 }
