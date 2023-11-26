@@ -52,7 +52,7 @@ img {
 @media screen and (min-width: 992px) {
     .pictures-page-part {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 300px;
+        column-gap: 100px;
         row-gap: 30px;
     }
 
