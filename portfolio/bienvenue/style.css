@@ -1,0 +1,65 @@
+.component-routes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 400px;
+}
+
+.component-routes > div > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+}
+
+.image-paysage-part {
+    background-image: url("images/lac.png");
+}
+
+.image-animaux-part {
+    background-image: url("images/croco.png");
+}
+
+.image-etoiles-part {
+    background-image: url("images/etoilerouge.png");
+}
+
+.image-mariage-part {
+    background-image: url("images/noir&blanc.png");
+}
+
+.social-networks {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-networks > div > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons img {
+    height: 60px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .component-routes {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        padding: 0 30px;
+    }
+
+    h6 {
+        margin-top: 10px!important;
+    }
+}

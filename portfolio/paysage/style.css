@@ -28,31 +28,31 @@ img {
 
 /* Sources images */
 .brouillard {
-    background-image: url("images/brouillard.svg");
+    background-image: url("images/brouillard.png");
 }
 
 .cascade {
-    background-image: url("images/cascade.svg");
+    background-image: url("images/cascade.png");
 }
 
 .jungle {
-    background-image: url("images/jungle.svg");
+    background-image: url("images/jungle.png");
 }
 
 .foret {
-    background-image: url("images/foret.svg");
+    background-image: url("images/foret.png");
 }
 
 .montagne {
-    background-image: url("images/montagne.svg");
+    background-image: url("images/montagne.png");
 }
 
 .coquelicot {
-    background-image: url("images/coquelicot.svg");
+    background-image: url("images/coquelicot.png");
 }
 
 .deuxmecs {
-    background-image: url("images/2mecs.svg");
+    background-image: url("images/2mecs.png");
 }
 
 @media screen and (min-width: 992px) {

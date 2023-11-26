@@ -1,0 +1,90 @@
+.pictures-page-part {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+.pictures-page-part > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+/* Sources images */
+.jour {
+    background-image: url("images/jour.png");
+}
+
+.lunentiere {
+    background-image: url("images/lunentiere.png");
+}
+
+.lunerouge {
+    background-image: url("images/lunerouge.png");
+}
+
+.mer {
+    background-image: url("images/mer.png");
+}
+
+.montagne {
+    background-image: url("images/montagne.png");
+    grid-column: span 2;
+    height: 200px!important;
+}
+
+.plagestartrail {
+    background-image: url("images/plagestartrail.png");
+    grid-column: span 2;
+    height: 200px!important;
+}
+
+
+@media screen and (min-width: 992px) {
+    .pictures-page-part {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 300px;
+        row-gap: 30px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pictures-page-part > div {
+        height: auto!important;
+    }    
+
+    .pictures-page-part > div {
+        /* background-size: contain; */
+    }
+
+    .jour {
+        order: 0;
+    }
+    .lunerouge {
+        order: 1;
+    }
+    .lunentiere {
+        order: 2;
+    }
+    .mer {
+        order: 3;
+    }
+    .plagestartrail {
+        order: 4;
+    }
+    .montagne {
+        order: 5;
+    }
+}

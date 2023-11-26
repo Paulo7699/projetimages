@@ -1,0 +1,109 @@
+.pictures-page-part {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+.pictures-page-part > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+/* Sources images */
+.dauphin {
+    background-image: url("images/dauphin.png");
+    grid-column: span 2;
+    height: 200px!important;
+}
+
+.abeille {
+    background-image: url("images/abeille.png");
+}
+
+.oiseau {
+    background-image: url("images/oiseau.png");
+    grid-column: span 2;
+    height: 200px!important;
+}
+
+.bouk {
+    background-image: url("images/bouk.png");
+    margin-top: -50px;
+    height: 300px!important;
+}
+
+.oiseau2 {
+    background-image: url("images/oiseau2.png");
+    margin-top: -150px;
+    height: 140px!important;
+}
+
+.oiseau3 {
+    background-image: url("images/oiseau3.png");
+    height: 250px!important;
+}
+
+.perroquet {
+    background-image: url("images/perroquet.png");
+    height: 400px!important;
+}
+
+
+@media screen and (min-width: 992px) {
+    .pictures-page-part {
+        grid-template-columns: 6fr 4fr 4fr 3fr;
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pictures-page-part > div {
+        height: auto!important;
+        grid-column: span 1;
+    }    
+
+    .bouk, .oiseau3 {
+        margin: 0;
+        margin-bottom: -30px;
+    }
+
+    .dauphin {
+        order: 0;
+    }
+    .abeille {
+        order: 1;
+    }
+    .oiseau3 {
+        order: 2;
+    }
+    .bouk {
+        order: 3;
+    }
+    .oiseau2 {
+        order: 4;
+        margin: 0;
+    }
+    .perroquet {
+        order: 5;
+    } 
+    
+    .oiseau {
+        order: 6;
+        grid-column: span 2!important;
+        margin-top: 30px;
+    }
+}

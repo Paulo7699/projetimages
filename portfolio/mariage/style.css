@@ -1,0 +1,118 @@
+.pictures-page-part {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+.pictures-page-part > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+}
+
+/* Sources images */
+.kiosque {
+    background-image: url("images/kiosque.png");
+}
+
+.hommes {
+    background-image: url("images/hommes.png");
+}
+
+.marieeneige {
+    background-image: url("images/marieeeneige.png");
+    grid-column: span 2;
+    height: 200px!important;
+}
+
+.escalier {
+    background-image: url("images/escalier.png");
+}
+
+.bouquet {
+    background-image: url("images/bouquet.png");
+}
+
+.table {
+    background-image: url("images/table.png");
+    margin-left: -30px;
+    height: 150px!important;
+}
+
+.potfleur {
+    background-image: url("images/potfleur.png");
+    margin-right: 30px;
+    height: 150px!important;
+}
+
+.mariesombre {
+    background-image: url("images/mariesombre.png");
+    grid-column: span 2;
+    height: 200px!important;
+}
+
+
+@media screen and (min-width: 992px) {
+    .pictures-page-part {
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+
+    .table, .bouquet, .marieeneige, .mariesombre {
+        grid-column: span 2;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pictures-page-part > div {
+        height: auto!important;
+    }    
+
+    .kiosque {
+        order: 0;
+        margin-bottom: 60px!important;
+        background-position: top!important;
+    }
+    .potfleur {
+        order: 1;
+        margin-right: 0px!important;
+        margin-bottom: 60px!important;
+    }
+    .table {
+        order: 2;
+        margin: 0!important;
+        margin-bottom: -60px!important;
+    }
+    .bouquet {
+        order: 3;
+    }
+    .marieeneige {
+        margin-top: -60px!important;
+        order: 4;
+    }
+    .mariesombre {
+        margin-top: 60px!important;
+        order: 5;
+    } 
+    
+    .hommes {
+        order: 6;
+    }
+
+    .escalier {
+        order: 7;
+    }
+}
